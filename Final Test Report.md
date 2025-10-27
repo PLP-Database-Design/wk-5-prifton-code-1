@@ -101,8 +101,13 @@
 ### Risks
 
 | ID | Feature | Risk Description | Likelihood | Impact | Priority | Mitigation Strategy |
-|----|---------|------------------|------------|--------|----------|---------------------|
-| | | | | | | |
+|:--|:--|:--|:--:|:--:|:--:|:--|
+| R1 | Reset Game | Reset button may fail to clear score or progress completely | Medium | High | High | Perform multiple reset operations and verify data state is cleared correctly in each test. |
+| R2 | Leaderboard | Scores may not save correctly in localStorage after multiple sessions | High | High | **Critical** | Test storing and retrieving top 3 scores across several browser sessions and refreshes. |
+| R3 | Bonus Round | Bonus logic may double wrong score after 3 puzzles | Medium | High | High | Validate arithmetic logic by testing with multiple sequences of puzzles and scores. |
+| R4 | Leaderboard | Sorting order may be incorrect (ascending instead of descending) | Medium | Medium | Medium | Test leaderboard with various score values and confirm correct descending order. |
+| R5 | UI / Buttons | Buttons may overlap or become unclickable at certain window sizes | Low | Medium | Low | Perform responsive UI tests in Chrome browser at different resolutions. |
+| R6 | Reset Game | Reset may still be enabled during active bonus round | Low | High | Medium | Trigger reset mid-bonus round to confirm safe state handling. |
 
 ### Risk Coverage
 
