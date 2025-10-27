@@ -111,8 +111,13 @@
 
 ### Risk Coverage
 
-- Tested Risks Percent: 
-- Untested Risks Percent: 
+**Tested Risks Percent:** 83%  
+**Untested Risks Percent:** 17%
+
+*(Pie Chart Representation)*  
+🟢 Tested Risks – 83%  
+🔴 Untested Risks – 17%
+
 
 ## Test Cases
 
