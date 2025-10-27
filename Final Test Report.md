@@ -11,9 +11,9 @@
 
 | Role | Name | Responsibilities |
 |------|------|------------------|
-| Test Manager | | Planning, scheduling, coordination, metric tracking |
-| Risk Analyst | | Risk identification, prioritization, test design linkage |
-| Test Executor | | Execution, evidence capture, defect logging |
+| Test Manager | Prifton Mliwa | Planning, scheduling, coordination, metric tracking |
+| Risk Analyst |Peter Adebisi | Risk identification, prioritization, test design linkage |
+| Test Executor | Lena Wahu | Execution, evidence capture, defect logging |
 
 ## Group Rules
 
@@ -39,25 +39,62 @@
 
 ### Objectives
 
-- 
+- Validate core game functionality including word scrambling and guessing.
+- Verify leaderboard persistence and sorting logic.
+- Test bonus round triggering and score doubling mechanism.
+- Ensure proper state management during game reset.
+- Assess usability and accessibility compliance.
 
 ### Scope
 
 **In Scope:**
-- 
+- - Game initialization and puzzle generation.
+
+- Score calculation with/without hints.
+
+- Leaderboard storage and retrieval.
+
+- Bonus round logic.
+
+- Reset functionality.
+
+- User interface responsiveness.
+
 
 **Out of Scope:**
-- 
+- Cross-browser compatibility testing.
+
+- Performance benchmarking.
+
+- Security testing of localStorage.
+
+- Mobile device testing.
+
+- Network interruption handling.
 
 ### Tools & Resources
+- Testing Framework: Manual testing
 
-- 
+- Browser: Chrome 
+
+- Defect Tracking: GitHub Issues
+
+- Documentation: Markdown
+
+- Evidence Capture: Browser screenshots
+
 
 ### Schedule
 
 | Phase | Planned Duration | Actual Duration | Status |
 |-------|------------------|-----------------|--------|
-| | | | |
+|Test Planning | 1 day | 1 day | Completed|
+|  Risk Analysis| 1 day | 1 day| Completed |
+| Test Case Design |  2 day | 12  day |  Completed|
+|  Test Execution | 1 day  | 1 day  | Completed |
+| Defect Reporting |1 day |  1 day | Completed | 
+|  Final Reporting	| 1 day | 1 day  | inprogress | 
+
 
 ## Risk Analysis
 
