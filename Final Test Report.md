@@ -202,9 +202,9 @@ Overall, the game performed well under manual test execution in Chrome, and evid
 
 | Name | Role | Initials | Date |
 |------|------|-----------|------|
-| | Test Manager | | |
-| | Risk Analyst | | |
-| | Test Executor | | |
+| Prifton Mliwa | Test Manager | | 28-10-2025 |
+| Peter Adebisi | Risk Analyst | |28-10-2025 |
+| Lena Wahu | Test Executor | |28-10-2025 |
 
 ## Overall Summary
 **Statement:** The Word Puzzle Game Plus has been thoroughly tested with 87.5% test case pass rate. Three defects were identified and logged. The risk-based testing approach effectively prioritized testing efforts and uncovered critical issues early in the phases.
