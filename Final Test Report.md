@@ -108,7 +108,7 @@
 | R4 | Leaderboard | Sorting order may be incorrect (ascending instead of descending) | Medium | Medium | Medium | Test leaderboard with various score values and confirm correct descending order. |
 | R5 | UI / Buttons | Buttons may overlap or become unclickable at certain window sizes | Low | Medium | Low | Perform responsive UI tests in Chrome browser at different resolutions. |
 | R6 | Reset Game | Reset may still be enabled during active bonus round | Low | High | Medium | Trigger reset mid-bonus round to confirm safe state handling. |
-| R7  |	Hint System	| Incorrect point deduction	|Medium |	Medium	|Medium	Validate score calculations after hint usage|
+| R7  |	Hint System	| Incorrect point deduction	|Medium |	Medium	|Medium	| Validate score calculations after hint usage|
 
 ### Risk Coverage
 
@@ -124,13 +124,13 @@
 
 | ID | Feature | Objective | Expected Result | Actual Result | Status | Risk Link |
 |----|---------|-----------|----------------|---------------|--------|-----------|
-| TC-01 |Basic Gameplay	|Verify word scrambling and guessing	|Word scrambled, correct guess accepted|	PASS	||Passed| -	|
+| TC-01 |Basic Gameplay	|Verify word scrambling and guessing	|Word scrambled, correct guess accepted|	PASS |Passed| -	|
 | TC-02 |Score Calculation	|Test scoring without hints	|+10 points for correct guess|	PASS	|Passed	| -| 
 | TC-03 |Hint System	|Verify hint cost and reduced points	|-2 points immediately, +5 for solve | PASS	|Passed	| R7 |
 | TC-04 |Leaderboard	|Verify top-3 sorting logic|	Scores sorted descending	|PASS	|Passed| R4 |
 |TC-05  |Bonus Round	|Test bonus triggering every 3 solves|	Score doubles after 3rd puzzle	|PASS	| R3 |
 | TC-06 |Reset Game	|Verify complete state reset|	Score=0, progress cleared	|PASS	|Passed	| R1 |
-| TC-07 |Negative Test	|Enter incorrect guess|	Error message displayed	PAS	Passed	| - |
+| TC-07 |Negative Test	|Enter incorrect guess|	Error message displayed	PAS	Passed	| - | -|
 | TC-08 |Usability	|Keyboard navigation	All functions accessible via keyboard |PARTIAL	|Failed	| R5 |
 
 
