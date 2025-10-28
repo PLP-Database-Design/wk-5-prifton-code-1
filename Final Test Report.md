@@ -130,8 +130,8 @@
 | TC-04 |Leaderboard	|Verify top-3 sorting logic|	Scores sorted descending	|PASS	|Passed| R4 |
 |TC-05  |Bonus Round	|Test bonus triggering every 3 solves|	Score doubles after 3rd puzzle	|PASS	| R3 |
 | TC-06 |Reset Game	|Verify complete state reset|	Score=0, progress cleared	|PASS	|Passed	| R1 |
-| TC-07 |Negative Test	|Enter incorrect guess|	Error message displayed	PAS	Passed	| - | -|
-| TC-08 |Usability	|Keyboard navigation	All functions accessible via keyboard |PARTIAL	|Failed	| R5 |
+| TC-07 |Negative Test	|Enter incorrect guess|	Error message displayed		| - | -|
+| TC-08 |Usability	|Keyboard navigation	All functions accessible via keyboard |PARTIAL	|Failed	| Failed | R5 |
 
 
 ## Defects
