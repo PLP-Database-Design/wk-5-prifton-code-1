@@ -31,9 +31,10 @@
 
 | Feature | Description | Risk Category |
 |---------|-------------|---------------|
-| Reset Game | Clears score and progress instantly | |
-| Leaderboard | Stores top 3 scores in localStorage | |
-| Bonus Round | Every 3 puzzles → doubles score | |
+| Reset Game | Clears score and progress instantly | Data Integrity, State Management |
+| Leaderboard | Stores top 3 scores in localStorage | Persistence, Boundary Conditions |
+| Bonus Round | Every 3 puzzles → doubles score | Logic, Arithmetic, Sequencing
+|
 
 ## Test Plan
 
