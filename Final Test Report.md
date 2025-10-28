@@ -108,6 +108,7 @@
 | R4 | Leaderboard | Sorting order may be incorrect (ascending instead of descending) | Medium | Medium | Medium | Test leaderboard with various score values and confirm correct descending order. |
 | R5 | UI / Buttons | Buttons may overlap or become unclickable at certain window sizes | Low | Medium | Low | Perform responsive UI tests in Chrome browser at different resolutions. |
 | R6 | Reset Game | Reset may still be enabled during active bonus round | Low | High | Medium | Trigger reset mid-bonus round to confirm safe state handling. |
+| R7  |	Hint System	| Incorrect point deduction	|Medium |	Medium	|Medium	Validate score calculations after hint usage|
 
 ### Risk Coverage
 
@@ -123,26 +124,48 @@
 
 | ID | Feature | Objective | Expected Result | Actual Result | Status | Risk Link |
 |----|---------|-----------|----------------|---------------|--------|-----------|
-| | | | | | | |
+| TC-01 |Basic Gameplay	|Verify word scrambling and guessing	|Word scrambled, correct guess accepted|	PASS	||Passed| -	|
+| TC-02 |Score Calculation	|Test scoring without hints	|+10 points for correct guess|	PASS	|Passed	| -| 
+| TC-03 |Hint System	|Verify hint cost and reduced points	|-2 points immediately, +5 for solve | PASS	|Passed	| R7 |
+| TC-04 |Leaderboard	|Verify top-3 sorting logic|	Scores sorted descending	|PASS	|Passed| R4 |
+|TC-05  |Bonus Round	|Test bonus triggering every 3 solves|	Score doubles after 3rd puzzle	|PASS	| R3 |
+| TC-06 |Reset Game	|Verify complete state reset|	Score=0, progress cleared	|PASS	|Passed	| R1 |
+| TC-07 |Negative Test	|Enter incorrect guess|	Error message displayed	PAS	Passed	| - |
+| TC-08 |Usability	|Keyboard navigation	All functions accessible via keyboard |PARTIAL	|Failed	| R5 |
+
 
 ## Defects
 
 | ID | Issue Title | Severity | Risk ID | Status | GitHub Link |
 |----|-------------|----------|---------|--------|-------------|
-| | | | | | |
+|001 |Scrambled word chatbox remains blank after reset. Disappears only when "new puzzle" is clicked | Medium | R1|open |https://github.com/PLP-Database-Design/wk-5-ngarama2025-1/issues/2#issue-3557771204|
+|002 | Hint button can be clicked twice before score updates|low |R4|fixed |https://github.com/PLP-Database-Design/wk-5-ngarama2025-1/issues/3#issue-3557789878 |
+|003 |Success message disappears too fast| low| R5| open| https://github.com/PLP-Database-Design/wk-5-ngarama2025-1/issues/4#issue-3557801540 |
 
 ## Metrics
 
-- Test Case Pass Percent: 
-- Defect Density: 
-- Risk Coverage Percent: 
-- Regression Success Rate: 
+- Test Case Pass Percent: 87.5% 
 
+- Defect Density: 0.375 defects/test case 
+
+- Risk Coverage Percent: 83%
+- 
+- Regression Success Rate: 100% 
 ### Defect Summary
 
-- Total Defects Logged: 
-- Critical High: 
-- Fix Rate: 
+- TTotal Defects Logged: 3
+
+- Critical/High: 0
+
+- Medium: 
+
+- Low: 
+
+Fix Rate: 67%
+
+#### Test Executor summary
+All critical functionalities — Reset, leaderboard, and bonus round were executed successfully. The only issues found were minor UI/UX delays that do not affect core game logic.
+Overall, the game performed well under manual test execution in Chrome, and evidence confirmed that all key features meet the design expectations.
 
 ## Test Control & Project Management
 
@@ -150,17 +173,26 @@
 
 | Phase | Deliverable | Actual Output | Variance | Owner |
 |-------|-------------|---------------|----------|-------|
-| | | | | |
+| Planning | Test Plan	| Comprehensive plan	|None |	Test Manager|
+| Analysis |Risk Assessment | 7 risks identified	| +1 risk	|Risk Analyst|
+|Design	| Test Cases	| 8 test cases |	None	|Test Executor |
+| Execution |	Test Results |	87.5% pass rate	| -12.5% |	Test Executor
+|Reporting	| Defect Log	3 issues logged |	None	| All |
 
 **Progress Tracking Method:**  
 **Change Control Notes:**
 
 ## Lessons Learned
 
-- Most Defect Prone Feature: 
+- Most Defect Prone Feature:  Leaderboard functionality
 - Risk Analysis Impact: 
-- Team Communication Effectiveness: 
-- Improvements for Next Cycle: 
+- Team Communication Effectiveness: Good coordination through daily syncs
+- Improvements for Next Cycle:
+  - Include more negative test scenarios
+
+  - Enhance accessibility testing coverage
+ 
+  - Implement automated regression tests
 
 ## Attachments
 
