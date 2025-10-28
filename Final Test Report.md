@@ -179,8 +179,9 @@ Overall, the game performed well under manual test execution in Chrome, and evid
 | Execution |	Test Results |	87.5% pass rate	| -12.5% |	Test Executor
 |Reporting	| Defect Log	|3 issues logged |	None	| All |
 
-**Progress Tracking Method:**  
-**Change Control Notes:**
+**Progress Tracking Method:**  Daily standups, GitHub Issues tracking
+ 
+**Change Control Notes:** No scope changes required during testing cycle
 
 ## Lessons Learned
 
