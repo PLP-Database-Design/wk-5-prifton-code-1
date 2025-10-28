@@ -196,7 +196,7 @@ Overall, the game performed well under manual test execution in Chrome, and evid
 
 ## Attachments
 
-- 
+- Github issues
 
 ## Sign Off
 
