@@ -157,9 +157,9 @@
 
 - Critical/High: 0
 
-- Medium: 
+- Medium: 1
 
-- Low: 
+- Low: 2
 
 Fix Rate: 67%
 
